@@ -83,7 +83,6 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* styles de la section des icônes */
 .icons-section {
     display: flex;
     justify-content: space-around;
@@ -99,12 +98,22 @@ nav a:hover {
     font-size: 40px;
     color: #333;
     transition: transform 0.3s, color 0.3s;
+    animation: colorChange 3s infinite;
 }
 
-.icon-container i:hover {
-    transform: rotate(360deg);
-    color: #ff6600;
+@keyframes colorChange {  /* Animation de changement de couleur */
+    0% {
+        color: #333;
+    }
+    50% {
+        color: #ff6600;
+    }
+    100% {
+        color: #333;
+    }
 }
+
+
 
 .contenu {
     display: flex;
