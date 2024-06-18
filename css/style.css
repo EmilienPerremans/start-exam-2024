@@ -1,0 +1,156 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');  /* Styles du texte */
+
+/* Styles de la page */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles des éléments */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* styles du logo */
+.logo img {
+    height: 40px;
+}
+
+/* styles de la navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* styles des liens de la navigation */
+nav li {
+    margin-left: 20px;
+}
+
+/* styles des liens de la navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/*styles des liens de la navigation au survol */
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* styles de la section d'accueil */
+.fond {
+    background-image: url('../images/balloon.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+/* styles du contenu de la section d'accueil */
+.fond-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* styles du titre de la section d'accueil */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}
+
+.icons-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.icon-container {
+    text-align: center;
+}
+
+.icon-container i {
+    font-size: 40px;
+    color: #333;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icon-container i:hover {
+    transform: rotate(360deg);
+    color: #ff6600;
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.block { /* Bloc de contenu avec image à gauche du texte */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.block img { /* Image à gauche du texte */
+    width: 45%;
+}
+
+.block.reverse {  /* Inversion de l'ordre des éléments */
+    flex-direction: reverse;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Styles responsives */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav li {
+        margin: 10px 0;
+    }
+    .content-block {
+        flex-direction: column;
+    }
+    .content-block img, .content-block p {
+        width: 100%;
+        text-align: center;
+    }
+}
